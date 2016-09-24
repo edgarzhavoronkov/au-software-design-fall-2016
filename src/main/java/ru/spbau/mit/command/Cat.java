@@ -8,11 +8,12 @@ import java.util.stream.Stream;
 
 /**
  * Created by Эдгар on 17.09.2016.
+ * Implementation of Command interface for Cat
  */
 public class Cat implements Command {
     /**
-     * @param input
-     * @return
+     * @param input - String with file's name to display on screen
+     * @return - whole file as one line
      */
     @Override
     public String execute(String input) {

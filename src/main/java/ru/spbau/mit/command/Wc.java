@@ -9,11 +9,12 @@ import java.util.stream.Stream;
 
 /**
  * Created by Эдгар on 17.09.2016.
+ * Implementation of a command interface for word count
  */
 public class Wc implements Command {
     /**
-     * @param input
-     * @return
+     * @param input - name of file to count on
+     * @return string with result as lines count, word count and bytes count separated with one tab
      */
     @Override
     public String execute(String input) {

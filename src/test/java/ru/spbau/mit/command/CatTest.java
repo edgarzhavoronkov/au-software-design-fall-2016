@@ -9,8 +9,10 @@ import static org.junit.Assert.*;
  */
 public class CatTest {
     @Test
-    public void execute() throws Exception {
-
+    public void testExecute() throws Exception {
+        Command cat = new Cat();
+        String filename = "src/test/resources/test";
+        assertEquals("test test test", cat.execute(filename));
     }
 
 }

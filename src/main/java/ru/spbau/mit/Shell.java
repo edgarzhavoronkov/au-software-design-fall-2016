@@ -8,6 +8,7 @@ import java.util.*;
 
 /**
  * Created by Эдгар on 17.09.2016.
+ * Main class for shell
  */
 public class Shell {
 
@@ -15,13 +16,13 @@ public class Shell {
     private Map<String, String> env = new HashMap<>();
 
     /**
-     *
+     * Does literally nothing, see Builder
      */
     private Shell() { }
 
     /**
-     * @param input
-     * @return
+     * @param input - raw input to execute
+     * @return - output of single command or whole pipeline
      */
     public String execute(String input) {
         List<String> pipeline = createPipeline(input);
@@ -58,20 +59,16 @@ public class Shell {
         return output;
     }
 
-    /**
-     * @param rawInput
-     * @return
-     */
     private List<String> createPipeline(String rawInput) {
         List<String> pipeline = new ArrayList<>();
         boolean inStrongQuotes = false;
         boolean inWeakQuotes = false;
-        int l = 0;
-        for (int r = 0; r < rawInput.length(); ++r) {
-            char chr = rawInput.charAt(r);
+        int left = 0;
+        for (int right = 0; right < rawInput.length(); ++right) {
+            char chr = rawInput.charAt(right);
             if (!inStrongQuotes && !inWeakQuotes && chr == '|') {
-                pipeline.add(rawInput.substring(l, r));
-                l = r + 1;
+                pipeline.add(rawInput.substring(left, right));
+                left = right + 1;
             }
             if (chr == '\'') {
                 inStrongQuotes ^= true;
@@ -80,15 +77,11 @@ public class Shell {
                 inWeakQuotes ^= true;
             }
         }
-        pipeline.add(rawInput.substring(l));
+        pipeline.add(rawInput.substring(left));
         pipeline.replaceAll(String::trim);
         return pipeline;
     }
 
-    /**
-     * @param rawCommand
-     * @return
-     */
     private String expandVars(String rawCommand) {
         List<Integer> placeholders = new ArrayList<>();
         boolean inStrongQuotes = false;
@@ -126,10 +119,6 @@ public class Shell {
         return expanded.append(rawCommand.substring(left)).toString();
     }
 
-    /**
-     * @param rawCommand
-     * @return
-     */
     private Pair<String, String> getAllVariablesFromCommand(String rawCommand) {
         List<String> tmp = new ArrayList<>(Arrays.asList(rawCommand.split("\\s+")));
         tmp.removeAll(Collections.singleton(""));
@@ -146,17 +135,14 @@ public class Shell {
         return new Pair<>(tmp.get(0), tmp.get(1));
     }
 
-    /**
-     * @param rawCommand
-     * @return
-     */
     private Pair<Command, String> parseCommand(String rawCommand) {
         String[] split = rawCommand.split("\\s+");
         String cmdName = split[0];
         List<String> args = new ArrayList<>();
         args.addAll(Arrays.asList(split).subList(1, split.length));
         if (commands.get(cmdName) != null) {
-            String input = String.join(" ", args);
+            String input = String.join(" ", args).replaceAll("(^\')|(^\")", "").replaceAll("(\'$)|(\"$)", "");
+
             return new Pair<>(commands.get(cmdName), input);
         } else {
             String cwd = commands.get("pwd").execute("");
@@ -164,28 +150,33 @@ public class Shell {
         }
     }
 
+    /**
+     * Class for creating the shell
+     */
     public static class Builder {
         private Shell shell;
 
         /**
-         *
+         * creates empty shell(with no commands)
          */
         public Builder() {
             shell = new Shell();
         }
 
         /**
-         * @param name
-         * @param cmd
-         * @return
+         * @param name - name of a command
+         * @param impl - implementation of a command
+         *             can be passed as an object, implementing interface of a Command
+         *             or a single lambda-expression (String input) -> {...}
+         * @return Builder with modified shell
          */
-        public Builder command(String name, Command cmd) {
-            shell.commands.put(name, cmd);
+        public Builder command(String name, Command impl) {
+            shell.commands.put(name, impl);
             return this;
         }
 
         /**
-         * @return
+         * @return Shell in particular state
          */
         public Shell init() {
             return shell;

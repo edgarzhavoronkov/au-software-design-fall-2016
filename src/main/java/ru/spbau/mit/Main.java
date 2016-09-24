@@ -5,6 +5,9 @@ import ru.spbau.mit.command.Wc;
 
 import java.util.Scanner;
 
+/**
+ * REPL class for shell
+ */
 public class Main {
 
     public static void main(String[] args) {
