@@ -42,8 +42,4 @@ public class ShellTest {
         String cmd4 = "echo $Y";
         assertEquals("2", shell.execute(cmd4));
     }
-
-
-
-
 }

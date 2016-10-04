@@ -13,7 +13,8 @@ import java.util.stream.Stream;
  */
 public class Wc implements Command {
     /**
-     * @param input - name of file to count on
+     * {@link Command}'s .execute implementation
+     * @param input name of file to count on
      * @return string with result as lines count, word count and bytes count separated with one tab
      */
     @Override

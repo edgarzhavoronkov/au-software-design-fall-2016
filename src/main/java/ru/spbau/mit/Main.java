@@ -18,16 +18,15 @@ public class Main {
                 .command("wc", new Wc())
                 .command("echo", input -> input)
                 .command("pwd", (input -> System.getProperty("user.dir")))
-                .command("exit", input -> {
-                    System.exit(0);
-                    return "";
-                })
                 .init();
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
             System.out.print(">> ");
             String input = scanner.nextLine();
+            if (input.trim().equals("exit")) {
+                System.exit(0);
+            }
             System.out.println(shell.execute(input));
         }
     }

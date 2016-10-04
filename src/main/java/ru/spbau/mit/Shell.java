@@ -21,8 +21,16 @@ public class Shell {
     private Shell() { }
 
     /**
-     * @param input - raw input to execute
-     * @return - output of single command or whole pipeline
+     * Method for executing commands
+     * Splits raw input into pipelines, then sets all variables into environment if finds any
+     * then performs expansion of all variables if they are present in the environment
+     * only after this executes whole pipeline
+     *
+     * Namely, gives output of a first command as an input to a second
+     * If second command has any arguments, then input is taken from arguments
+     *
+     * @param input raw input to execute
+     * @return output of single command or whole pipeline
      */
     public String execute(String input) {
         List<String> pipeline = createPipeline(input);
@@ -157,13 +165,14 @@ public class Shell {
         private Shell shell;
 
         /**
-         * creates empty shell(with no commands)
+         * Creates empty shell(with no commands)
          */
         public Builder() {
             shell = new Shell();
         }
 
         /**
+         * Adds new command to the shell
          * @param name - name of a command
          * @param impl - implementation of a command
          *             can be passed as an object, implementing interface of a Command
@@ -176,6 +185,7 @@ public class Shell {
         }
 
         /**
+         * Returns shell in current state
          * @return Shell in particular state
          */
         public Shell init() {

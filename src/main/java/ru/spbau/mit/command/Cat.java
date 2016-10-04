@@ -12,8 +12,9 @@ import java.util.stream.Stream;
  */
 public class Cat implements Command {
     /**
-     * @param input - String with file's name to display on screen
-     * @return - whole file as one line
+     * {@link Command}'s .execute implementation
+     * @param input String with file's name to display on screen
+     * @return whole file as one line
      */
     @Override
     public String execute(String input) {

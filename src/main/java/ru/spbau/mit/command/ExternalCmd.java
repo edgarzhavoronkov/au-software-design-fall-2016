@@ -16,8 +16,9 @@ public class ExternalCmd implements Command {
     private String cwd;
 
     /**
-     * @param env - environment in which we are currently running
-     * @param cwd - directory in which we are currently running
+     * Simple constructor
+     * @param env environment in which we are currently running
+     * @param cwd directory in which we are currently running
      */
     public ExternalCmd(Map<String, String> env, String cwd) {
         this.env = env;
@@ -25,8 +26,9 @@ public class ExternalCmd implements Command {
     }
 
     /**
-     * @param input - arguments for command
-     * @return - result of execution as a String
+     * {@link Command}'s .execute implementation
+     * @param input arguments for command
+     * @return result of execution as a String
      * if process fails, then prints why it failed as a result
      */
     @Override
