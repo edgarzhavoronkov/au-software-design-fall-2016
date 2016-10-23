@@ -4,6 +4,8 @@ import ru.spbau.mit.command.Command;
 import ru.spbau.mit.command.ExternalCmd;
 import ru.spbau.mit.util.Pair;
 
+import static ru.spbau.mit.util.InputSplitter.splitBy;
+
 import java.util.*;
 
 /**
@@ -25,7 +27,7 @@ public class Shell {
      * @return - output of single command or whole pipeline
      */
     public String execute(String input) {
-        List<String> pipeline = createPipeline(input);
+        List<String> pipeline = splitBy(input, '|');
         for (int i = 0; i < pipeline.size();) {
             Pair<String, String> assignment =
                     getAllVariablesFromCommand(pipeline.get(i));
@@ -57,29 +59,6 @@ public class Shell {
             }
         }
         return output;
-    }
-
-    private List<String> createPipeline(String rawInput) {
-        List<String> pipeline = new ArrayList<>();
-        boolean inStrongQuotes = false;
-        boolean inWeakQuotes = false;
-        int left = 0;
-        for (int right = 0; right < rawInput.length(); ++right) {
-            char chr = rawInput.charAt(right);
-            if (!inStrongQuotes && !inWeakQuotes && chr == '|') {
-                pipeline.add(rawInput.substring(left, right));
-                left = right + 1;
-            }
-            if (chr == '\'') {
-                inStrongQuotes ^= true;
-            }
-            if (chr == '\"') {
-                inWeakQuotes ^= true;
-            }
-        }
-        pipeline.add(rawInput.substring(left));
-        pipeline.replaceAll(String::trim);
-        return pipeline;
     }
 
     private String expandVars(String rawCommand) {
@@ -141,8 +120,10 @@ public class Shell {
         List<String> args = new ArrayList<>();
         args.addAll(Arrays.asList(split).subList(1, split.length));
         if (commands.get(cmdName) != null) {
-            String input = String.join(" ", args).replaceAll("(^\')|(^\")", "").replaceAll("(\'$)|(\"$)", "");
-
+            String input = String.join(" ", args);
+            if (!cmdName.equals("grep")) {
+                input = input.replaceAll("(^\')|(^\")", "").replaceAll("(\'$)|(\"$)", "");
+            }
             return new Pair<>(commands.get(cmdName), input);
         } else {
             String cwd = commands.get("pwd").execute("");
