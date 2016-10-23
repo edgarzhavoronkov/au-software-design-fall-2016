@@ -1,6 +1,8 @@
 package ru.spbau.mit;
 
 import ru.spbau.mit.command.Cat;
+import ru.spbau.mit.command.Cd;
+import ru.spbau.mit.command.Ls;
 import ru.spbau.mit.command.Wc;
 
 import java.util.Scanner;
@@ -16,6 +18,8 @@ public class Main {
         Shell shell = new Shell.Builder()
                 .command("cat", new Cat())
                 .command("wc", new Wc())
+                .command("cd", new Cd())
+                .command("ls", new Ls())
                 .command("echo", input -> input)
                 .command("pwd", (input -> System.getProperty("user.dir")))
                 .init();
