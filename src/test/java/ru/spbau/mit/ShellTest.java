@@ -69,7 +69,7 @@ public class ShellTest {
 
         final String cmd = "cd " + directory.getAbsolutePath();
         String newUserDirectory = shell.execute(cmd);
-        assertEquals(newUserDirectory, System.getProperty("user.dir"));
+        assertEquals(System.getProperty("user.dir"), newUserDirectory);
     }
 
     @Test
