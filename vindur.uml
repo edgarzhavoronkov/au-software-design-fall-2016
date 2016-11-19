@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ru.csc.vindur</OriginalElement>
+  <nodes>
+    <node x="3425.729166666667" y="1737.5">ru.csc.vindur.storage.StorageRange</node>
+    <node x="4627.953484235492" y="2311.5">ru.csc.vindur.test.MultiThreadTestExecutor</node>
+    <node x="647.3886590866832" y="2245.0">ru.csc.vindur.storage.StorageHierarchy</node>
+    <node x="5151.788284737726" y="45.5">ru.csc.vindur.transactions.Operation.Type</node>
+    <node x="966.1386590866832" y="1749.5">ru.csc.vindur.bitset.ChunkBitSetTest</node>
+    <node x="4797.225220889138" y="2773.0">ru.csc.vindur.test.TuningTest</node>
+    <node x="5781.121618071059" y="569.0">ru.csc.vindur.Engine.Builder</node>
+    <node x="4824.953484235492" y="291.5">ru.csc.vindur.executor.Executor</node>
+    <node x="4388.796992420017" y="2312.0">ru.csc.vindur.test.SimpleTest</node>
+    <node x="1053.8278889973972" y="1166.5">ru.csc.vindur.bitset.BitArray</node>
+    <node x="5164.702678571429" y="989.0">ru.csc.vindur.Engine</node>
+    <node x="2930.395833333334" y="2861.0">ru.csc.vindur.storage.StorageLuceneTest</node>
+    <node x="4841.553484235493" y="1783.0">ru.csc.vindur.executor.DumbExecutor</node>
+    <node x="4069.4755952380956" y="2356.5">ru.csc.vindur.test.comparison</node>
+    <node x="2837.838659086683" y="491.5">ru.csc.vindur.storage.Storage</node>
+    <node x="2462.6800385974716" y="1660.5">ru.csc.vindur.storage.StorageBucketIntegers</node>
+    <node x="1782.0" y="3358.0">ru.csc.vindur.example.MobilePhoneTest</node>
+    <node x="3112.0469924200165" y="2190.0">ru.csc.vindur.storage.StorageLucene</node>
+    <node x="102.0" y="2345.5">ru.csc.vindur.bitset.ChunkBitArray.Operation</node>
+    <node x="5863.954951404392" y="1.0">ru.csc.vindur.executor.tuner.Tuner.AttributeStat</node>
+    <node x="1833.6719924200167" y="2861.0">ru.csc.vindur.storage.StorageStringsTest</node>
+    <node x="1248.25" y="3358.0">ru.csc.vindur.test.TestBuilder</node>
+    <node x="5129.788284737726" y="247.0">ru.csc.vindur.transactions.Operation</node>
+    <node x="3688.4757847377255" y="2916.5">ru.csc.vindur.storage.StorageHelper</node>
+    <node x="6009.121618071059" y="580.5">ru.csc.vindur.executor.TunableExecutor</node>
+    <node x="3899.7969924200165" y="614.0">ru.csc.vindur.executor.TinyExecutor</node>
+    <node x="1245.1386590866832" y="1661.0">ru.csc.vindur.bitset.JavaBitArray</node>
+    <node x="5569.011817568826" y="224.0">ru.csc.vindur.executor.tuner.Tuner</node>
+    <node x="847.0" y="3746.5">ru.csc.vindur.test.TunableTestBuilder</node>
+    <node x="1183.0" y="3724.5">ru.csc.vindur.test.SimpleTestBuilder</node>
+    <node x="1060.3886590866832" y="592.0">ru.csc.vindur.bitset.ROBitArray</node>
+    <node x="4464.046992420017" y="0.0">ru.csc.vindur.Query</node>
+    <node x="2673.395833333334" y="2861.0">ru.csc.vindur.EngineTest</node>
+    <node x="721.1386590866832" y="1727.0">ru.csc.vindur.storage.StorageHierarchy.BitSetNode</node>
+    <node x="4152.796992420017" y="1738.0">ru.csc.vindur.executor.SmartExecutor</node>
+    <node x="1489.838659086683" y="2224.0">ru.csc.vindur.storage.IntegerRangeStoragesTest</node>
+    <node x="5208.303484235493" y="546.5">ru.csc.vindur.document.Document</node>
+    <node x="323.3886590866832" y="2817.0">ru.csc.vindur.storage.StorageHierarchyTest</node>
+    <node x="317.0" y="4268.0">ru.csc.vindur.example.MobilePhonesExample</node>
+    <node x="1584.0" y="3358.0">ru.csc.vindur.example.sample_db.Cleaner</node>
+    <node x="2090.338659086683" y="470.0">ru.csc.vindur.bitset.EWAHBitArray</node>
+    <node x="3505.604166666667" y="1199.0">ru.csc.vindur.storage.StorageRangeBase</node>
+    <node x="754.3886590866832" y="2905.0">ru.csc.vindur.storage.StorageHierarchy.HierarchyCorruptedException</node>
+    <node x="847.5" y="3358.5">ru.csc.vindur.storage.StorageType</node>
+    <node x="3937.4757847377255" y="2762.0">ru.csc.vindur.test.TransactionTest</node>
+    <node x="2425.338659086683" y="2289.0">ru.csc.vindur.storage.StorageExact</node>
+    <node x="2109.671992420017" y="2905.5">ru.csc.vindur.example.sample_db.MarketExample</node>
+    <node x="3604.7969924200165" y="580.0">ru.csc.vindur.storage.RangeRequest</node>
+    <node x="1951.0" y="3358.0">ru.csc.vindur.test.utils</node>
+    <node x="5043.303484235493" y="602.5">ru.csc.vindur.transactions.Transaction</node>
+    <node x="10.5" y="1617.0">ru.csc.vindur.bitset.ChunkBitArray</node>
+    <node x="1940.5719924200168" y="2300.5">ru.csc.vindur.example.sample_db.XMLDataFileParser</node>
+    <node x="0.0" y="3548.0">ru.csc.vindur.example.MobilePhoneTestBuilder</node>
+    <node x="4442.620150902159" y="1682.5">ru.csc.vindur.test.TestExecutor</node>
+    <node x="910.9245942615353" y="3172.0">ru.csc.vindur.storage.StorageHierarchy.Hierarchy</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ru.csc.vindur.executor.DumbExecutor" target="ru.csc.vindur.executor.Executor">
+      <point x="0.0" y="-25.5" />
+      <point x="4952.053484235493" y="450.0" />
+      <point x="4935.453484235492" y="450.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageStringsTest" target="ru.csc.vindur.storage.StorageExact">
+      <point x="85.33333333333348" y="-81.0" />
+      <point x="2047.0053257533502" y="2692.0" />
+      <point x="2485.981516229541" y="2692.0" />
+      <point x="-80.85714285714266" y="82.0" />
+    </edge>
+    <edge source="ru.csc.vindur.EngineTest" target="ru.csc.vindur.storage.StorageLucene">
+      <point x="98.75" y="-81.0" />
+      <point x="2890.645833333334" y="2722.0" />
+      <point x="3208.689849562874" y="2722.0" />
+      <point x="-128.85714285714266" y="181.0" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageHierarchy.BitSetNode" target="ru.csc.vindur.storage.StorageHierarchy">
+      <point x="75.0" y="81.5" />
+      <point x="111.75" y="-126.0" />
+    </edge>
+    <edge source="ru.csc.vindur.EngineTest" target="ru.csc.vindur.storage.StorageExact">
+      <point x="-98.75" y="-81.0" />
+      <point x="2693.145833333334" y="2702.0" />
+      <point x="2566.838659086683" y="2702.0" />
+      <point x="0.0" y="82.0" />
+    </edge>
+    <edge source="ru.csc.vindur.EngineTest" target="ru.csc.vindur.storage.Storage">
+      <point x="-19.75" y="-81.0" />
+      <point x="2772.145833333334" y="2682.0" />
+      <point x="3002.2246814546143" y="2682.0" />
+      <point x="3002.2246814546143" y="949.0" />
+      <point x="3028.338659086683" y="949.0" />
+      <point x="0.0" y="148.0" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageBucketIntegers" target="ru.csc.vindur.storage.StorageRangeBase">
+      <point x="108.75" y="-148.0" />
+      <point x="2788.9300385974716" y="1597.0" />
+      <point x="3550.604166666667" y="1597.0" />
+      <point x="-90.0" y="59.0" />
+    </edge>
+    <edge source="ru.csc.vindur.test.MultiThreadTestExecutor" target="ru.csc.vindur.test.TestExecutor">
+      <point x="0.0" y="-59.5" />
+      <point x="4715.953484235492" y="2160.0" />
+      <point x="4689.286817568826" y="2160.0" />
+      <point x="98.66666666666697" y="126.0" />
+    </edge>
+    <edge source="ru.csc.vindur.executor.tuner.Tuner" target="ru.csc.vindur.executor.tuner.Tuner.AttributeStat">
+      <point x="0.0" y="-93.0" />
+      <point x="5804.011817568826" y="204.0" />
+      <point x="5906.954951404392" y="204.0" />
+      <point x="-86.0" y="81.0" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageHierarchy.BitSetNode" target="ru.csc.vindur.bitset.BitArray">
+      <point x="0.0" y="-81.5" />
+      <point x="833.6386590866832" y="1587.0" />
+      <point x="1149.4528889973972" y="1587.0" />
+      <point x="-31.875" y="91.5" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageRange" target="ru.csc.vindur.bitset.BitArray">
+      <point x="-72.75" y="-71.0" />
+      <point x="3498.479166666667" y="1547.0" />
+      <point x="1298.2028889973972" y="1547.0" />
+      <point x="116.875" y="91.5" />
+    </edge>
+    <edge source="ru.csc.vindur.example.sample_db.MarketExample" target="ru.csc.vindur.storage.StorageBucketIntegers">
+      <point x="0.0" y="-36.5" />
+      <point x="2196.171992420017" y="2672.0" />
+      <point x="2414.838659086683" y="2672.0" />
+      <point x="2414.838659086683" y="2110.0" />
+      <point x="2625.8050385974716" y="2110.0" />
+      <point x="-54.375" y="148.0" />
+    </edge>
+    <edge source="ru.csc.vindur.Engine.Builder" target="ru.csc.vindur.executor.tuner.Tuner">
+      <point x="0.0" y="-70.5" />
+      <point x="5885.121618071059" y="450.0" />
+      <point x="5980.261817568826" y="450.0" />
+      <point x="176.25" y="93.0" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageHierarchy" target="ru.csc.vindur.storage.Storage">
+      <point x="-111.75" y="-126.0" />
+      <point x="684.6386590866832" y="2170.0" />
+      <point x="0.0" y="2170.0" />
+      <point x="0.0" y="929.0" />
+      <point x="2865.0529448009693" y="929.0" />
+      <point x="-163.28571428571422" y="148.0" />
+    </edge>
+    <edge source="ru.csc.vindur.example.sample_db.MarketExample" target="ru.csc.vindur.example.sample_db.XMLDataFileParser">
+      <point x="-69.19999999999982" y="-36.5" />
+      <point x="2126.971992420017" y="2672.0" />
+      <point x="2077.0719924200166" y="2672.0" />
+      <point x="0.0" y="70.5" />
+    </edge>
+    <edge source="ru.csc.vindur.test.comparison" target="ru.csc.vindur.storage.RangeRequest">
+      <point x="-21.300000000000182" y="-14.5" />
+      <point x="4119.175595238095" y="2070.0" />
+      <point x="3934.5089285714294" y="2070.0" />
+      <point x="3934.5089285714294" y="959.0" />
+      <point x="3833.9636590866835" y="959.0" />
+      <point x="91.66666666666697" y="59.5" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageExact" target="ru.csc.vindur.storage.Storage">
+      <point x="70.75" y="-82.0" />
+      <point x="2637.588659086683" y="2080.0" />
+      <point x="2452.1800385974716" y="2080.0" />
+      <point x="2452.1800385974716" y="949.0" />
+      <point x="2973.9100876581115" y="949.0" />
+      <point x="-54.42857142857156" y="148.0" />
+    </edge>
+    <edge source="ru.csc.vindur.test.TuningTest" target="ru.csc.vindur.Query">
+      <point x="164.5" y="-169.0" />
+      <point x="5149.725220889138" y="2742.0" />
+      <point x="6370.621618071059" y="2742.0" />
+      <point x="6370.621618071059" y="184.0" />
+      <point x="4729.880325753349" y="184.0" />
+      <point x="120.83333333333303" y="82.0" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageLuceneTest" target="ru.csc.vindur.bitset.EWAHBitArray">
+      <point x="-103.66666666666674" y="-81.0" />
+      <point x="2982.229166666667" y="2652.0" />
+      <point x="2313.3050385974716" y="2652.0" />
+      <point x="2313.3050385974716" y="919.0" />
+      <point x="2392.838659086683" y="919.0" />
+      <point x="60.5" y="169.5" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageHelper" target="ru.csc.vindur.storage.StorageLucene">
+      <point x="-28.625" y="-25.5" />
+      <point x="3774.3507847377255" y="2632.0" />
+      <point x="3401.975563848588" y="2632.0" />
+      <point x="64.42857142857156" y="181.0" />
+    </edge>
+    <edge source="ru.csc.vindur.executor.TunableExecutor" target="ru.csc.vindur.executor.Executor">
+      <point x="-87.75" y="-59.0" />
+      <point x="6096.871618071059" y="430.0" />
+      <point x="5023.853484235492" y="430.0" />
+      <point x="88.39999999999964" y="25.5" />
+    </edge>
+    <edge source="ru.csc.vindur.Engine" target="ru.csc.vindur.executor.Executor">
+      <point x="-234.78125" y="-269.0" />
+      <point x="5271.421428571429" y="869.0" />
+      <point x="5016.162859235493" y="869.0" />
+      <point x="5016.162859235493" y="450.0" />
+      <point x="4979.653484235492" y="450.0" />
+      <point x="44.19999999999982" y="25.5" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.IntegerRangeStoragesTest" target="ru.csc.vindur.storage.Storage">
+      <point x="-75.19999999999982" y="-147.0" />
+      <point x="1602.6386590866832" y="2170.0" />
+      <point x="1608.7291666666672" y="2170.0" />
+      <point x="1608.7291666666672" y="939.0" />
+      <point x="2919.481516229541" y="939.0" />
+      <point x="-108.85714285714266" y="148.0" />
+    </edge>
+    <edge source="ru.csc.vindur.Engine" target="ru.csc.vindur.Engine.Builder">
+      <point x="192.09375" y="-269.0" />
+      <point x="5698.296428571429" y="939.0" />
+      <point x="5807.121618071059" y="939.0" />
+      <point x="-78.0" y="70.5" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageLucene" target="ru.csc.vindur.storage.Storage">
+      <point x="112.75" y="-181.0" />
+      <point x="3450.2969924200165" y="2110.0" />
+      <point x="3231.6380080450162" y="2110.0" />
+      <point x="3231.6380080450162" y="909.0" />
+      <point x="3082.7672305152546" y="909.0" />
+      <point x="54.42857142857156" y="148.0" />
+    </edge>
+    <edge source="ru.csc.vindur.Engine" target="ru.csc.vindur.executor.tuner.Tuner">
+      <point x="149.40624999999977" y="-269.0" />
+      <point x="5655.608928571429" y="929.0" />
+      <point x="5770.621618071059" y="929.0" />
+      <point x="5770.621618071059" y="450.0" />
+      <point x="5862.761817568826" y="450.0" />
+      <point x="58.75" y="93.0" />
+    </edge>
+    <edge source="ru.csc.vindur.test.TestExecutor" target="ru.csc.vindur.Engine">
+      <point x="74.0" y="-126.0" />
+      <point x="4664.620150902159" y="1597.0" />
+      <point x="5335.452678571429" y="1597.0" />
+      <point x="-170.75" y="269.0" />
+    </edge>
+    <edge source="ru.csc.vindur.Engine" target="ru.csc.vindur.storage.Storage">
+      <point x="-320.15625" y="-269.0" />
+      <point x="5186.046428571429" y="889.0" />
+      <point x="3191.6243733723977" y="889.0" />
+      <point x="163.28571428571422" y="148.0" />
+    </edge>
+    <edge source="ru.csc.vindur.executor.tuner.Tuner" target="ru.csc.vindur.Query">
+      <point x="-156.66666666666697" y="-93.0" />
+      <point x="5647.345150902159" y="194.0" />
+      <point x="4681.546992420017" y="194.0" />
+      <point x="72.5" y="82.0" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageRangeBase" target="ru.csc.vindur.storage.RangeRequest">
+      <point x="67.5" y="-59.0" />
+      <point x="3708.104166666667" y="959.0" />
+      <point x="3742.2969924200165" y="959.0" />
+      <point x="0.0" y="59.5" />
+    </edge>
+    <edge source="ru.csc.vindur.test.TransactionTest" target="ru.csc.vindur.storage.StorageLucene">
+      <point x="-79.19999999999982" y="-180.0" />
+      <point x="4056.2757847377256" y="2602.0" />
+      <point x="3466.4041352771596" y="2602.0" />
+      <point x="128.85714285714312" y="181.0" />
+    </edge>
+    <edge source="ru.csc.vindur.test.comparison" target="ru.csc.vindur.test.comparison">
+      <point x="-53.25" y="14.5" />
+      <point x="4087.2255952380956" y="2405.5" />
+      <point x="4049.4755952380956" y="2405.5" />
+      <point x="4049.4755952380956" y="2380.6666666666665" />
+      <point x="-71.0" y="9.666666666666629" />
+    </edge>
+    <edge source="ru.csc.vindur.test.TransactionTest" target="ru.csc.vindur.storage.StorageExact">
+      <point x="-158.39999999999964" y="-180.0" />
+      <point x="3977.075784737726" y="2612.0" />
+      <point x="2647.695801943826" y="2612.0" />
+      <point x="80.85714285714266" y="82.0" />
+    </edge>
+    <edge source="ru.csc.vindur.bitset.ChunkBitSetTest" target="ru.csc.vindur.bitset.BitArray">
+      <point x="0.0" y="-59.0" />
+      <point x="1095.6386590866832" y="1597.0" />
+      <point x="1170.7028889973972" y="1597.0" />
+      <point x="-10.625" y="91.5" />
+    </edge>
+    <edge source="ru.csc.vindur.example.MobilePhoneTestBuilder" target="ru.csc.vindur.storage.StorageType">
+      <point x="0.0" y="-335.0" />
+      <point x="413.5" y="3528.0" />
+      <point x="873.6666666666665" y="3528.0" />
+      <point x="-52.33333333333337" y="69.5" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageHierarchy" target="ru.csc.vindur.storage.StorageHierarchy.BitSetNode">
+      <point x="-37.25" y="-126.0" />
+      <point x="-75.0" y="81.5" />
+    </edge>
+    <edge source="ru.csc.vindur.test.SimpleTest" target="ru.csc.vindur.test.TestExecutor">
+      <point x="44.0" y="-59.0" />
+      <point x="4520.796992420017" y="2160.0" />
+      <point x="4590.620150902159" y="2160.0" />
+      <point x="0.0" y="126.0" />
+    </edge>
+    <edge source="ru.csc.vindur.test.comparison" target="ru.csc.vindur.storage.StorageRange">
+      <point x="-49.69999999999982" y="-14.5" />
+      <point x="4090.775595238096" y="2090.0" />
+      <point x="3643.979166666667" y="2090.0" />
+      <point x="72.75" y="71.0" />
+    </edge>
+    <edge source="ru.csc.vindur.test.TuningTest" target="ru.csc.vindur.storage.StorageExact">
+      <point x="-164.5" y="-169.0" />
+      <point x="4820.725220889138" y="2582.0" />
+      <point x="2688.1243733723977" y="2582.0" />
+      <point x="121.28571428571422" y="82.0" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.IntegerRangeStoragesTest" target="ru.csc.vindur.bitset.BitArray">
+      <point x="-150.39999999999986" y="-147.0" />
+      <point x="1527.4386590866832" y="2170.0" />
+      <point x="1591.6386590866832" y="2170.0" />
+      <point x="1591.6386590866832" y="1587.0" />
+      <point x="1213.2028889973972" y="1587.0" />
+      <point x="31.875" y="91.5" />
+    </edge>
+    <edge source="ru.csc.vindur.test.TuningTest" target="ru.csc.vindur.storage.StorageRange">
+      <point x="-70.5" y="-169.0" />
+      <point x="4914.725220889138" y="2742.0" />
+      <point x="4908.968729073662" y="2742.0" />
+      <point x="4908.968729073662" y="2030.0" />
+      <point x="3692.479166666667" y="2030.0" />
+      <point x="121.25" y="71.0" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.IntegerRangeStoragesTest" target="ru.csc.vindur.storage.StorageBucketIntegers">
+      <point x="75.20000000000005" y="-147.0" />
+      <point x="1753.038659086683" y="2100.0" />
+      <point x="2517.0550385974716" y="2100.0" />
+      <point x="-163.125" y="148.0" />
+    </edge>
+    <edge source="ru.csc.vindur.test.TuningTest" target="ru.csc.vindur.executor.SmartExecutor">
+      <point x="-23.5" y="-169.0" />
+      <point x="4961.725220889138" y="2742.0" />
+      <point x="4919.968729073662" y="2742.0" />
+      <point x="4919.968729073662" y="2020.0" />
+      <point x="4332.796992420017" y="2020.0" />
+      <point x="80.0" y="70.5" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageLuceneTest" target="ru.csc.vindur.storage.StorageLucene">
+      <point x="0.0" y="-81.0" />
+      <point x="3085.895833333334" y="2732.0" />
+      <point x="3273.118420991445" y="2732.0" />
+      <point x="-64.42857142857156" y="181.0" />
+    </edge>
+    <edge source="ru.csc.vindur.test.TuningTest" target="ru.csc.vindur.Engine">
+      <point x="70.5" y="-169.0" />
+      <point x="5055.725220889138" y="2722.0" />
+      <point x="5676.952678571429" y="2722.0" />
+      <point x="170.74999999999977" y="269.0" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageExact" target="ru.csc.vindur.bitset.BitArray">
+      <point x="-70.75" y="-82.0" />
+      <point x="2496.088659086683" y="2090.0" />
+      <point x="2441.1800385974716" y="2090.0" />
+      <point x="2441.1800385974716" y="1567.0" />
+      <point x="1255.7028889973972" y="1567.0" />
+      <point x="74.375" y="91.5" />
+    </edge>
+    <edge source="ru.csc.vindur.test.TuningTest" target="ru.csc.vindur.storage.StorageLucene">
+      <point x="-117.5" y="-169.0" />
+      <point x="4867.725220889138" y="2572.0" />
+      <point x="3530.8327067057307" y="2572.0" />
+      <point x="193.28571428571422" y="181.0" />
+    </edge>
+    <edge source="ru.csc.vindur.executor.tuner.Tuner" target="ru.csc.vindur.Engine">
+      <point x="-176.25" y="93.0" />
+      <point x="5627.761817568826" y="450.0" />
+      <point x="5748.621618071059" y="450.0" />
+      <point x="5748.621618071059" y="909.0" />
+      <point x="5570.233928571429" y="909.0" />
+      <point x="64.03125" y="-269.0" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageHierarchy.Hierarchy" target="ru.csc.vindur.storage.StorageHierarchy.HierarchyCorruptedException">
+      <point x="-33.0" y="-70.5" />
+      <point x="1009.9245942615353" y="3142.0" />
+      <point x="848.8886590866832" y="3142.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageHierarchyTest" target="ru.csc.vindur.storage.StorageHierarchy">
+      <point x="136.66666666666663" y="-125.0" />
+      <point x="665.0553257533497" y="2742.0" />
+      <point x="721.8886590866832" y="2742.0" />
+      <point x="-74.5" y="126.0" />
+    </edge>
+    <edge source="ru.csc.vindur.executor.tuner.Tuner.AttributeStat" target="ru.csc.vindur.executor.tuner.Tuner">
+      <point x="0.0" y="81.0" />
+      <point x="5992.954951404392" y="204.0" />
+      <point x="5960.678484235493" y="204.0" />
+      <point x="156.66666666666697" y="-93.0" />
+    </edge>
+    <edge source="ru.csc.vindur.test.TransactionTest" target="ru.csc.vindur.storage.StorageRange">
+      <point x="0.0" y="-180.0" />
+      <point x="4135.475784737726" y="2592.0" />
+      <point x="3775.1112223307305" y="2592.0" />
+      <point x="3775.1112223307305" y="2120.0" />
+      <point x="3595.479166666667" y="2120.0" />
+      <point x="24.25" y="71.0" />
+    </edge>
+    <edge source="ru.csc.vindur.example.sample_db.MarketExample" target="ru.csc.vindur.executor.TinyExecutor">
+      <point x="-34.59999999999991" y="-36.5" />
+      <point x="2161.5719924200166" y="2662.0" />
+      <point x="2324.3050385974716" y="2662.0" />
+      <point x="2324.3050385974716" y="969.0" />
+      <point x="3936.6303257533496" y="969.0" />
+      <point x="-73.66666666666697" y="25.5" />
+    </edge>
+    <edge source="ru.csc.vindur.test.comparison" target="ru.csc.vindur.executor.SmartExecutor">
+      <point x="35.5" y="-14.5" />
+      <point x="4175.975595238096" y="2150.0" />
+      <point x="4212.796992420017" y="2150.0" />
+      <point x="-40.0" y="70.5" />
+    </edge>
+    <edge source="ru.csc.vindur.executor.TunableExecutor" target="ru.csc.vindur.executor.tuner.Tuner.AttributeStat">
+      <point x="87.75" y="-59.0" />
+      <point x="6272.371618071059" y="204.0" />
+      <point x="6078.954951404392" y="204.0" />
+      <point x="86.0" y="81.0" />
+    </edge>
+    <edge source="ru.csc.vindur.test.comparison" target="ru.csc.vindur.Query">
+      <point x="21.300000000000182" y="-14.5" />
+      <point x="4161.775595238096" y="2040.0" />
+      <point x="4142.296992420017" y="2040.0" />
+      <point x="4142.296992420017" y="194.0" />
+      <point x="4536.546992420017" y="194.0" />
+      <point x="-72.5" y="82.0" />
+    </edge>
+    <edge source="ru.csc.vindur.test.TransactionTest" target="ru.csc.vindur.Query">
+      <point x="158.39999999999964" y="-180.0" />
+      <point x="4293.875784737726" y="2742.0" />
+      <point x="4814.453484235492" y="2742.0" />
+      <point x="4814.453484235492" y="204.0" />
+      <point x="4633.213659086683" y="204.0" />
+      <point x="24.16666666666697" y="82.0" />
+    </edge>
+    <edge source="ru.csc.vindur.test.TestExecutor" target="ru.csc.vindur.Query">
+      <point x="-74.0" y="-126.0" />
+      <point x="4516.620150902159" y="204.0" />
+      <point x="4584.880325753349" y="204.0" />
+      <point x="-24.16666666666697" y="82.0" />
+    </edge>
+    <edge source="ru.csc.vindur.transactions.Operation" target="ru.csc.vindur.transactions.Operation.Type">
+      <point x="-46.0" y="-70.0" />
+      <point x="-24.0" y="36.5" />
+    </edge>
+    <edge source="ru.csc.vindur.bitset.JavaBitArray" target="ru.csc.vindur.bitset.BitArray">
+      <point x="0.0" y="-147.5" />
+      <point x="1413.1386590866832" y="1597.0" />
+      <point x="1191.9528889973972" y="1597.0" />
+      <point x="10.625" y="91.5" />
+    </edge>
+    <edge source="ru.csc.vindur.bitset.ChunkBitArray" target="ru.csc.vindur.bitset.BitArray">
+      <point x="-146.0" y="-191.5" />
+      <point x="83.5" y="1547.0" />
+      <point x="1064.4528889973972" y="1547.0" />
+      <point x="-116.875" y="91.5" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageHelper" target="ru.csc.vindur.test.comparison">
+      <point x="85.875" y="-25.5" />
+      <point x="3888.8507847377255" y="2742.0" />
+      <point x="4193.725595238096" y="2742.0" />
+      <point x="53.25" y="14.5" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageStringsTest" target="ru.csc.vindur.bitset.BitArray">
+      <point x="-85.33333333333348" y="-81.0" />
+      <point x="1876.3386590866833" y="1577.0" />
+      <point x="1234.4528889973972" y="1577.0" />
+      <point x="53.125" y="91.5" />
+    </edge>
+    <edge source="ru.csc.vindur.test.TuningTest" target="ru.csc.vindur.executor.TunableExecutor">
+      <point x="117.5" y="-169.0" />
+      <point x="5102.725220889138" y="2732.0" />
+      <point x="6184.621618071059" y="2732.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="ru.csc.vindur.Engine" target="ru.csc.vindur.transactions.Operation">
+      <point x="21.34375" y="-269.0" />
+      <point x="5527.546428571429" y="899.0" />
+      <point x="5620.803484235493" y="899.0" />
+      <point x="5620.803484235493" y="450.0" />
+      <point x="5283.121618071058" y="450.0" />
+      <point x="61.33333333333303" y="70.0" />
+    </edge>
+    <edge source="ru.csc.vindur.EngineTest" target="ru.csc.vindur.storage.StorageBucketIntegers">
+      <point x="-59.25" y="-81.0" />
+      <point x="2732.645833333334" y="2672.0" />
+      <point x="2832.1800385974716" y="2672.0" />
+      <point x="2832.1800385974716" y="2110.0" />
+      <point x="2734.5550385974716" y="2110.0" />
+      <point x="54.375" y="148.0" />
+    </edge>
+    <edge source="ru.csc.vindur.executor.SmartExecutor" target="ru.csc.vindur.executor.Executor">
+      <point x="0.0" y="-70.5" />
+      <point x="4252.796992420017" y="450.0" />
+      <point x="4891.253484235493" y="450.0" />
+      <point x="-44.19999999999982" y="25.5" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageRangeBase" target="ru.csc.vindur.storage.Storage">
+      <point x="-67.5" y="-59.0" />
+      <point x="3573.104166666667" y="899.0" />
+      <point x="3137.195801943826" y="899.0" />
+      <point x="108.85714285714266" y="148.0" />
+    </edge>
+    <edge source="ru.csc.vindur.test.TransactionTest" target="ru.csc.vindur.executor.SmartExecutor">
+      <point x="79.19999999999982" y="-180.0" />
+      <point x="4214.675784737725" y="2732.0" />
+      <point x="4315.370150902159" y="2732.0" />
+      <point x="4315.370150902159" y="2150.0" />
+      <point x="4252.796992420017" y="2150.0" />
+      <point x="0.0" y="70.5" />
+    </edge>
+    <edge source="ru.csc.vindur.example.MobilePhonesExample" target="ru.csc.vindur.example.MobilePhoneTestBuilder">
+      <point x="0.0" y="-47.5" />
+      <point x="0.0" y="335.0" />
+    </edge>
+    <edge source="ru.csc.vindur.transactions.Operation.Type" target="ru.csc.vindur.transactions.Operation">
+      <point x="24.0" y="36.5" />
+      <point x="5223.788284737726" y="204.0" />
+      <point x="5267.788284737726" y="204.0" />
+      <point x="46.0" y="-70.0" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageHierarchy.Hierarchy" target="ru.csc.vindur.storage.StorageHierarchy">
+      <point x="-99.0" y="-70.5" />
+      <point x="943.9245942615353" y="3152.0" />
+      <point x="743.8886590866832" y="3152.0" />
+      <point x="743.8886590866832" y="2742.0" />
+      <point x="771.5553257533497" y="2742.0" />
+      <point x="-24.833333333333485" y="126.0" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageRange" target="ru.csc.vindur.storage.StorageRangeBase">
+      <point x="72.75" y="-71.0" />
+      <point x="3643.979166666667" y="1597.0" />
+      <point x="3640.604166666667" y="1597.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.IntegerRangeStoragesTest" target="ru.csc.vindur.storage.RangeRequest">
+      <point x="0.0" y="-147.0" />
+      <point x="1677.838659086683" y="2170.0" />
+      <point x="1619.7291666666672" y="2170.0" />
+      <point x="1619.7291666666672" y="959.0" />
+      <point x="3650.63032575335" y="959.0" />
+      <point x="-91.66666666666652" y="59.5" />
+    </edge>
+    <edge source="ru.csc.vindur.EngineTest" target="ru.csc.vindur.storage.StorageRange">
+      <point x="19.75" y="-81.0" />
+      <point x="2811.645833333334" y="2692.0" />
+      <point x="3039.338659086683" y="2692.0" />
+      <point x="3039.338659086683" y="2130.0" />
+      <point x="3498.479166666667" y="2130.0" />
+      <point x="-72.75" y="71.0" />
+    </edge>
+    <edge source="ru.csc.vindur.transactions.Transaction" target="ru.csc.vindur.transactions.Operation">
+      <point x="0.0" y="-37.0" />
+      <point x="5115.803484235493" y="450.0" />
+      <point x="5221.788284737726" y="450.0" />
+      <point x="0.0" y="70.0" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageBucketIntegers" target="ru.csc.vindur.bitset.BitArray">
+      <point x="-108.75" y="-148.0" />
+      <point x="2571.4300385974716" y="1557.0" />
+      <point x="1276.9528889973972" y="1557.0" />
+      <point x="95.625" y="91.5" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.IntegerRangeStoragesTest" target="ru.csc.vindur.storage.StorageRange">
+      <point x="150.4000000000001" y="-147.0" />
+      <point x="1828.2386590866831" y="2120.0" />
+      <point x="3449.979166666667" y="2120.0" />
+      <point x="-121.25" y="71.0" />
+    </edge>
+    <edge source="ru.csc.vindur.test.SimpleTestBuilder" target="ru.csc.vindur.storage.StorageType">
+      <point x="-89.0" y="-158.5" />
+      <point x="1272.0" y="3518.0" />
+      <point x="978.3333333333333" y="3518.0" />
+      <point x="52.33333333333337" y="69.5" />
+    </edge>
+    <edge source="ru.csc.vindur.example.sample_db.MarketExample" target="ru.csc.vindur.storage.StorageExact">
+      <point x="34.59999999999991" y="-36.5" />
+      <point x="2230.7719924200164" y="2702.0" />
+      <point x="2526.4100876581115" y="2702.0" />
+      <point x="-40.42857142857156" y="82.0" />
+    </edge>
+    <edge source="ru.csc.vindur.EngineTest" target="ru.csc.vindur.executor.SmartExecutor">
+      <point x="59.25" y="-81.0" />
+      <point x="2851.145833333334" y="2702.0" />
+      <point x="3050.338659086683" y="2702.0" />
+      <point x="3050.338659086683" y="2140.0" />
+      <point x="4172.796992420017" y="2140.0" />
+      <point x="-80.0" y="70.5" />
+    </edge>
+    <edge source="ru.csc.vindur.bitset.BitArray" target="ru.csc.vindur.bitset.EWAHBitArray">
+      <point x="0.0" y="-91.5" />
+      <point x="1181.3278889973972" y="909.0" />
+      <point x="2150.838659086683" y="909.0" />
+      <point x="-181.5" y="169.5" />
+    </edge>
+    <edge source="ru.csc.vindur.test.TunableTestBuilder" target="ru.csc.vindur.storage.StorageType">
+      <point x="-79.0" y="-136.5" />
+      <point x="0.0" y="69.5" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageHierarchyTest" target="ru.csc.vindur.bitset.BitArray">
+      <point x="-136.66666666666652" y="-125.0" />
+      <point x="391.7219924200167" y="2742.0" />
+      <point x="459.0" y="2742.0" />
+      <point x="459.0" y="1577.0" />
+      <point x="1128.2028889973972" y="1577.0" />
+      <point x="-53.125" y="91.5" />
+    </edge>
+    <edge source="ru.csc.vindur.test.comparison" target="ru.csc.vindur.storage.StorageBucketIntegers">
+      <point x="-63.899999999999636" y="-14.5" />
+      <point x="4076.575595238096" y="2100.0" />
+      <point x="2843.3050385974716" y="2100.0" />
+      <point x="163.125" y="148.0" />
+    </edge>
+    <edge source="ru.csc.vindur.test.comparison" target="ru.csc.vindur.test.TestExecutor">
+      <point x="49.69999999999982" y="-14.5" />
+      <point x="4190.175595238095" y="2160.0" />
+      <point x="4491.953484235492" y="2160.0" />
+      <point x="-98.66666666666697" y="126.0" />
+    </edge>
+    <edge source="ru.csc.vindur.Engine.Builder" target="ru.csc.vindur.Engine">
+      <point x="26.0" y="70.5" />
+      <point x="5911.121618071059" y="959.0" />
+      <point x="5783.671428571429" y="959.0" />
+      <point x="277.4687499999998" y="-269.0" />
+    </edge>
+    <edge source="ru.csc.vindur.test.comparison" target="ru.csc.vindur.storage.StorageRangeBase">
+      <point x="-35.5" y="-14.5" />
+      <point x="4104.975595238096" y="2080.0" />
+      <point x="3842.354166666667" y="2080.0" />
+      <point x="3842.354166666667" y="1597.0" />
+      <point x="3730.604166666667" y="1597.0" />
+      <point x="90.0" y="59.0" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageHierarchy.HierarchyCorruptedException" target="ru.csc.vindur.storage.StorageHierarchy">
+      <point x="0.0" y="-37.0" />
+      <point x="848.8886590866832" y="2742.0" />
+      <point x="821.2219924200167" y="2742.0" />
+      <point x="24.833333333333314" y="126.0" />
+    </edge>
+    <edge source="ru.csc.vindur.Engine" target="ru.csc.vindur.transactions.Transaction">
+      <point x="-149.40625" y="-269.0" />
+      <point x="5356.796428571429" y="849.0" />
+      <point x="5079.553484235493" y="849.0" />
+      <point x="-36.25" y="37.0" />
+    </edge>
+    <edge source="ru.csc.vindur.Engine" target="ru.csc.vindur.executor.TinyExecutor">
+      <point x="-277.46875" y="-269.0" />
+      <point x="5228.733928571429" y="879.0" />
+      <point x="4083.9636590866835" y="879.0" />
+      <point x="73.66666666666697" y="25.5" />
+    </edge>
+    <edge source="ru.csc.vindur.bitset.BitArray" target="ru.csc.vindur.bitset.ROBitArray">
+      <point x="-85.0" y="-91.5" />
+      <point x="1096.3278889973972" y="919.0" />
+      <point x="1169.3886590866832" y="919.0" />
+      <point x="0.0" y="47.5" />
+    </edge>
+    <edge source="ru.csc.vindur.test.SimpleTestBuilder" target="ru.csc.vindur.test.TestBuilder">
+      <point x="89.0" y="-158.5" />
+      <point x="67.25" y="70.0" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageHelper" target="ru.csc.vindur.storage.StorageRange">
+      <point x="28.625" y="-25.5" />
+      <point x="3831.6007847377255" y="2622.0" />
+      <point x="3596.5469924200165" y="2622.0" />
+      <point x="3596.5469924200165" y="2130.0" />
+      <point x="3546.979166666667" y="2130.0" />
+      <point x="-24.25" y="71.0" />
+    </edge>
+    <edge source="ru.csc.vindur.example.sample_db.MarketExample" target="ru.csc.vindur.storage.StorageLucene">
+      <point x="69.19999999999982" y="-36.5" />
+      <point x="2265.371992420017" y="2712.0" />
+      <point x="3144.2612781343023" y="2712.0" />
+      <point x="-193.28571428571422" y="181.0" />
+    </edge>
+    <edge source="ru.csc.vindur.test.comparison" target="ru.csc.vindur.executor.TinyExecutor">
+      <point x="-7.100000000000364" y="-14.5" />
+      <point x="4133.375595238095" y="2060.0" />
+      <point x="4010.2969924200165" y="2060.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="ru.csc.vindur.test.SimpleTest" target="ru.csc.vindur.executor.SmartExecutor">
+      <point x="-44.0" y="-59.0" />
+      <point x="4432.796992420017" y="2140.0" />
+      <point x="4292.796992420017" y="2140.0" />
+      <point x="40.0" y="70.5" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageHierarchy" target="ru.csc.vindur.storage.StorageHierarchy.Hierarchy">
+      <point x="74.5" y="126.0" />
+      <point x="870.8886590866832" y="2742.0" />
+      <point x="1134.4245942615353" y="2742.0" />
+      <point x="1134.4245942615353" y="3152.0" />
+      <point x="1075.9245942615353" y="3152.0" />
+      <point x="33.0" y="-70.5" />
+    </edge>
+    <edge source="ru.csc.vindur.test.TunableTestBuilder" target="ru.csc.vindur.test.TestBuilder">
+      <point x="79.0" y="-136.5" />
+      <point x="1084.0" y="3528.0" />
+      <point x="1315.5" y="3528.0" />
+      <point x="-67.25" y="70.0" />
+    </edge>
+    <edge source="ru.csc.vindur.bitset.ChunkBitArray.Operation" target="ru.csc.vindur.bitset.ChunkBitArray">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="191.5" />
+    </edge>
+    <edge source="ru.csc.vindur.executor.TinyExecutor" target="ru.csc.vindur.executor.Executor">
+      <point x="0.0" y="-25.5" />
+      <point x="4010.2969924200165" y="440.0" />
+      <point x="4847.053484235493" y="440.0" />
+      <point x="-88.39999999999964" y="25.5" />
+    </edge>
+    <edge source="ru.csc.vindur.test.comparison" target="ru.csc.vindur.executor.DumbExecutor">
+      <point x="63.899999999999636" y="-14.5" />
+      <point x="4204.375595238095" y="2170.0" />
+      <point x="4896.803484235493" y="2170.0" />
+      <point x="-55.25" y="25.5" />
+    </edge>
+    <edge source="ru.csc.vindur.bitset.EWAHBitArray" target="ru.csc.vindur.bitset.BitArray">
+      <point x="-60.5" y="169.5" />
+      <point x="2271.838659086683" y="919.0" />
+      <point x="1266.3278889973972" y="919.0" />
+      <point x="85.0" y="-91.5" />
+    </edge>
+    <edge source="ru.csc.vindur.test.TuningTest" target="ru.csc.vindur.executor.DumbExecutor">
+      <point x="23.5" y="-169.0" />
+      <point x="5008.725220889138" y="2742.0" />
+      <point x="5007.303484235493" y="2742.0" />
+      <point x="55.25" y="25.5" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageHelper" target="ru.csc.vindur.storage.StorageExact">
+      <point x="-85.875" y="-25.5" />
+      <point x="3717.1007847377255" y="2642.0" />
+      <point x="2607.2672305152546" y="2642.0" />
+      <point x="40.42857142857156" y="82.0" />
+    </edge>
+    <edge source="ru.csc.vindur.Engine" target="ru.csc.vindur.document.Document">
+      <point x="-64.03125" y="-269.0" />
+      <point x="5442.171428571429" y="829.0" />
+      <point x="5308.803484235493" y="829.0" />
+      <point x="-100.5" y="93.0" />
+    </edge>
+    <edge source="ru.csc.vindur.storage.StorageLucene" target="ru.csc.vindur.bitset.EWAHBitArray">
+      <point x="-112.75" y="-181.0" />
+      <point x="3224.7969924200165" y="2110.0" />
+      <point x="3220.6380080450162" y="2110.0" />
+      <point x="3220.6380080450162" y="919.0" />
+      <point x="2513.838659086683" y="919.0" />
+      <point x="181.5" y="169.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.20123203285420946" x="3185.5" y="2181.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
