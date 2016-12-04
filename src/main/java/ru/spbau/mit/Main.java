@@ -31,7 +31,9 @@ public class Main {
                 System.exit(0);
             }
 
-            System.out.println(shell.execute(input));
+            if (!input.isEmpty()) {
+                System.out.println(shell.execute(input));
+            }
         }
     }
 }

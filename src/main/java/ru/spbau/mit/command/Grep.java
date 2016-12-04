@@ -70,12 +70,21 @@ public class Grep implements Command {
                     }
                 }
             }
+            resetState();
             return result.toString();
         } catch (IOException e) {
+            resetState();
             return "Failed to open file for searching";
         } catch (IndexOutOfBoundsException e) {
+            resetState();
             return "Wrong number of arguments! Provide at least pattern to search by and filename where to search";
         }
+    }
+
+    private void resetState() {
+        this.ignoreCase = false;
+        this.wholeWords = false;
+        this.extraLines = 0;
     }
 
     private Pattern createPattern(String regex) {
