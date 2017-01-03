@@ -20,4 +20,14 @@ Also supports `grep` utility with keys:
 This project on pivotal tracker:
 [link](https://www.pivotaltracker.com/n/projects/1870057)
 
+## Note for patterns hw
+
+Used patterns:
+- all commands are implemented with Command pattern
+- Shell itself is a Singleton
+- Shell uses CommandProvider which is a small Factory
+- ExternalCmd is an Adapter
+
+4 patterns for such small shell(however, i had to get rid of Builder =( )
+
 

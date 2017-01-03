@@ -8,14 +8,7 @@ import static org.junit.Assert.assertEquals;
  * Created by Эдгар on 20.09.2016.
  */
 public class ShellTest {
-    private final Shell shell = new Shell.Builder()
-            .command("echo", input -> input)
-            .command("pwd", (input -> System.getProperty("user.dir")))
-            .command("exit", input -> {
-                System.exit(0);
-                return "";
-            })
-            .init();
+    private final Shell shell = Shell.getInstance();
 
     @Test
     public void testSimplePipelines() throws Exception {

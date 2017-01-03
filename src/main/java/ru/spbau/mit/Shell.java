@@ -1,6 +1,7 @@
 package ru.spbau.mit;
 
 import ru.spbau.mit.command.Command;
+import ru.spbau.mit.command.CommandProvider;
 import ru.spbau.mit.command.ExternalCmd;
 import ru.spbau.mit.util.Pair;
 
@@ -13,14 +14,17 @@ import java.util.*;
  * Main class for shell
  */
 public class Shell {
-
-    private Map<String, Command> commands = new HashMap<>();
     private Map<String, String> env = new HashMap<>();
+    private static final Shell instance = new Shell();
 
     /**
      * Does literally nothing, see Builder
      */
     private Shell() { }
+
+    public static Shell getInstance() {
+        return instance;
+    }
 
     /**
      * @param input - raw input to execute
@@ -119,48 +123,15 @@ public class Shell {
         String cmdName = split[0];
         List<String> args = new ArrayList<>();
         args.addAll(Arrays.asList(split).subList(1, split.length));
-        if (commands.get(cmdName) != null) {
+        if (CommandProvider.commandByName(cmdName) != null) {
             String input = String.join(" ", args);
             if (!cmdName.equals("grep")) {
                 input = input.replaceAll("(^\')|(^\")", "").replaceAll("(\'$)|(\"$)", "");
             }
-            return new Pair<>(commands.get(cmdName), input);
+            return new Pair<>(CommandProvider.commandByName(cmdName), input);
         } else {
-            String cwd = commands.get("pwd").execute("");
+            String cwd = CommandProvider.commandByName("pwd").execute("");
             return new Pair<>(new ExternalCmd(env, cwd), rawCommand);
-        }
-    }
-
-    /**
-     * Class for creating the shell
-     */
-    public static class Builder {
-        private Shell shell;
-
-        /**
-         * creates empty shell(with no commands)
-         */
-        public Builder() {
-            shell = new Shell();
-        }
-
-        /**
-         * @param name - name of a command
-         * @param impl - implementation of a command
-         *             can be passed as an object, implementing interface of a Command
-         *             or a single lambda-expression (String input) -> {...}
-         * @return Builder with modified shell
-         */
-        public Builder command(String name, Command impl) {
-            shell.commands.put(name, impl);
-            return this;
-        }
-
-        /**
-         * @return Shell in particular state
-         */
-        public Shell init() {
-            return shell;
         }
     }
 }
