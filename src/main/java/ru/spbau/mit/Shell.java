@@ -17,11 +17,12 @@ public class Shell {
     private Map<String, String> env = new HashMap<>();
     private static final Shell instance = new Shell();
 
-    /**
-     * Does literally nothing, see Builder
-     */
     private Shell() { }
 
+    /**
+     * Returns instance of shell
+     * @return instance of shell
+     */
     public static Shell getInstance() {
         return instance;
     }

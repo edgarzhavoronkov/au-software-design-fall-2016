@@ -24,7 +24,7 @@ This project on pivotal tracker:
 
 Used patterns:
 - all commands are implemented with Command pattern
-- Shell itself is a Singleton
+- Shell itself is a Singleton with Lazy Initialization
 - Shell uses CommandProvider which is a small Factory
 - ExternalCmd is an Adapter
 
