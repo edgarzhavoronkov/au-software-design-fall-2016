@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Properties>
+        <Property name="server_log">logs/server.log</Property>
+        <Property name="client_log">logs/client.log</Property>
+        <Property name="tab_log">logs/tab.log</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="CONSOLE" target="SYSTEM_ERR">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+        </Console>
+
+        <File name="SERVER" fileName="${server_log}">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+        </File>
+
+        <File name="CLIENT" fileName="${client_log}">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+        </File>
+
+        <File name="TAB" fileName="${tab_log}">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="error">
+            <AppenderRef ref="CONSOLE" />
+        </Root>
+
+        <logger name="ru.spbau.mit.client.ChatClient" level="INFO" additivity="false">
+            <AppenderRef ref="CONSOLE"/>
+        </logger>
+
+        <logger name="ru.spbau.mit.server.ChatServer" level="INFO" additivity="false">
+            <AppenderRef ref="CONSOLE"/>
+        </logger>
+
+        <logger name="ru.spbau.mit.ui.ChatTabController" level="INFO" additivity="false">
+            <AppenderRef ref="CONSOLE"/>
+        </logger>
+    </Loggers>
+</Configuration>

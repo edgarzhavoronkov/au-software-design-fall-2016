@@ -1,5 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea/*
-out/*
-au-software-design-fall-2016.iml
 target/*
+logs/*

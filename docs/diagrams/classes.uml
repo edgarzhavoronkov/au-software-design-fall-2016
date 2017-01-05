@@ -3,63 +3,104 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="325.0" y="256.5">ru.spbau.mit.Shell</node>
-    <node x="-18.5" y="312.0">ru.spbau.mit.util.Pair</node>
-    <node x="38.5" y="60.5">ru.spbau.mit.command.ExternalCmd</node>
-    <node x="436.5" y="-25.5">ru.spbau.mit.command.Cat</node>
-    <node x="716.5" y="94.5">ru.spbau.mit.command.Wc</node>
-    <node x="917.5" y="300.5">ru.spbau.mit.Shell.Builder</node>
-    <node x="723.5" y="-25.5">ru.spbau.mit.Main</node>
-    <node x="436.5" y="94.5">ru.spbau.mit.command.Command</node>
+    <node x="83.49999999999989" y="527.5">ru.spbau.mit.proto.ChatProtocol</node>
+    <node x="0.0" y="751.0">ru.spbau.mit.ui.ChatTabController</node>
+    <node x="237.1180555555555" y="214.0">ru.spbau.mit.chat.ChatMessage</node>
+    <node x="604.8749999999999" y="0.0">ru.spbau.mit.chat.Chat</node>
+    <node x="601.1180555555554" y="1074.0">ru.spbau.mit.ChatMain</node>
+    <node x="735.6273148148148" y="258.5">ru.spbau.mit.chat.ChatManager</node>
+    <node x="864.2083333333333" y="504.5">ru.spbau.mit.server.ChatServer.ConnectionHandler</node>
+    <node x="477.4999999999999" y="427.0">ru.spbau.mit.client.ChatClient</node>
+    <node x="848.8333333333333" y="795.0">ru.spbau.mit.server.ChatServer</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="ru.spbau.mit.Shell.Builder" target="ru.spbau.mit.Shell">
-      <point x="-40.0" y="-59.5" />
-      <point x="960.0" y="200.0" />
-      <point x="560.0" y="200.0" />
-      <point x="40.0" y="-103.5" />
+    <edge source="ru.spbau.mit.ui.ChatTabController" target="ru.spbau.mit.chat.Chat">
+      <point x="-73.0" y="-136.5" />
+      <point x="73.0" y="189.0" />
+      <point x="657.8749999999999" y="189.0" />
+      <point x="-106.0" y="82.0" />
     </edge>
-    <edge source="ru.spbau.mit.Main" target="ru.spbau.mit.Shell.Builder">
-      <point x="76.5" y="-0.0" />
-      <point x="1000.0" y="0.0" />
-      <point x="0.0" y="-59.5" />
+    <edge source="ru.spbau.mit.client.ChatClient" target="ru.spbau.mit.chat.ChatManager">
+      <point x="84.0" y="-137.0" />
+      <point x="729.4999999999999" y="407.0" />
+      <point x="769.6273148148148" y="407.0" />
+      <point x="-102.0" y="37.0" />
     </edge>
-    <edge source="ru.spbau.mit.Main" target="ru.spbau.mit.command.Wc">
-      <point x="0.0" y="25.5" />
-      <point x="0.0" y="-25.5" />
+    <edge source="ru.spbau.mit.ChatMain" target="ru.spbau.mit.ui.ChatTabController">
+      <point x="-189.0" y="-191.0" />
+      <point x="632.6180555555554" y="1049.0" />
+      <point x="146.0" y="1049.0" />
+      <point x="0.0" y="136.5" />
     </edge>
-    <edge source="ru.spbau.mit.Main" target="ru.spbau.mit.command.Cat">
-      <point x="-76.5" y="-0.0" />
-      <point x="83.5" y="-0.0" />
+    <edge source="ru.spbau.mit.ChatMain" target="ru.spbau.mit.chat.ChatManager">
+      <point x="0.0" y="-191.0" />
+      <point x="821.6180555555554" y="1049.0" />
+      <point x="826.3749999999999" y="1049.0" />
+      <point x="826.3749999999999" y="397.0" />
+      <point x="837.6273148148148" y="397.0" />
+      <point x="-34.0" y="37.0" />
     </edge>
-    <edge source="ru.spbau.mit.Shell" target="ru.spbau.mit.command.ExternalCmd">
-      <point x="-195.0" y="-40.0" />
-      <point x="160.0" y="320.0" />
-      <point x="0.0" y="59.5" />
+    <edge source="ru.spbau.mit.ui.ChatTabController" target="ru.spbau.mit.client.ChatClient">
+      <point x="73.0" y="-136.5" />
+      <point x="219.0" y="726.0" />
+      <point x="533.4999999999999" y="726.0" />
+      <point x="-112.0" y="137.0" />
     </edge>
-    <edge source="ru.spbau.mit.Shell" target="ru.spbau.mit.command.Command">
-      <point x="0.0" y="-103.5" />
-      <point x="0.0" y="25.5" />
+    <edge source="ru.spbau.mit.server.ChatServer" target="ru.spbau.mit.server.ChatServer.ConnectionHandler">
+      <point x="-101.66666666666674" y="-92.5" />
+      <point x="899.6666666666665" y="726.0" />
+      <point x="916.9583333333333" y="726.0" />
+      <point x="-52.75" y="59.5" />
     </edge>
-    <edge source="ru.spbau.mit.command.Wc" target="ru.spbau.mit.command.Command">
-      <point x="-83.5" y="-0.0" />
-      <point x="83.5" y="-0.0" />
+    <edge source="ru.spbau.mit.chat.ChatManager" target="ru.spbau.mit.chat.Chat">
+      <point x="68.0" y="-37.0" />
+      <point x="939.6273148148148" y="189.0" />
+      <point x="869.8749999999999" y="189.0" />
+      <point x="106.0" y="82.0" />
     </edge>
-    <edge source="ru.spbau.mit.Shell" target="ru.spbau.mit.util.Pair">
-      <point x="-195.0" y="-0.0" />
-      <point x="58.5" y="-0.0" />
+    <edge source="ru.spbau.mit.client.ChatClient" target="ru.spbau.mit.chat.ChatMessage">
+      <point x="-84.0" y="-137.0" />
+      <point x="561.4999999999999" y="407.0" />
+      <point x="501.8680555555555" y="407.0" />
+      <point x="88.25" y="81.5" />
     </edge>
-    <edge source="ru.spbau.mit.command.Cat" target="ru.spbau.mit.command.Command">
-      <point x="0.0" y="25.5" />
-      <point x="0.0" y="-25.5" />
+    <edge source="ru.spbau.mit.proto.ChatProtocol" target="ru.spbau.mit.chat.ChatMessage">
+      <point x="0.0" y="-36.5" />
+      <point x="270.4999999999999" y="407.0" />
+      <point x="325.3680555555555" y="407.0" />
+      <point x="-88.25" y="81.5" />
     </edge>
-    <edge source="ru.spbau.mit.command.ExternalCmd" target="ru.spbau.mit.command.Command">
-      <point x="121.5" y="-0.0" />
-      <point x="-83.5" y="-0.0" />
+    <edge source="ru.spbau.mit.server.ChatServer.ConnectionHandler" target="ru.spbau.mit.server.ChatServer">
+      <point x="52.75" y="59.5" />
+      <point x="1022.4583333333333" y="726.0" />
+      <point x="1001.3333333333333" y="726.0" />
+      <point x="0.0" y="-92.5" />
+    </edge>
+    <edge source="ru.spbau.mit.server.ChatServer" target="ru.spbau.mit.chat.ChatManager">
+      <point x="101.66666666666663" y="-92.5" />
+      <point x="1103.0" y="726.0" />
+      <point x="1085.7083333333333" y="726.0" />
+      <point x="1085.7083333333333" y="407.0" />
+      <point x="973.6273148148148" y="407.0" />
+      <point x="102.0" y="37.0" />
+    </edge>
+    <edge source="ru.spbau.mit.ChatMain" target="ru.spbau.mit.client.ChatClient">
+      <point x="-63.0" y="-191.0" />
+      <point x="758.6180555555554" y="1049.0" />
+      <point x="704.6180555555554" y="1049.0" />
+      <point x="704.6180555555554" y="726.0" />
+      <point x="757.4999999999999" y="726.0" />
+      <point x="112.0" y="137.0" />
+    </edge>
+    <edge source="ru.spbau.mit.ChatMain" target="ru.spbau.mit.server.ChatServer">
+      <point x="189.0" y="-191.0" />
+      <point x="1010.6180555555554" y="1049.0" />
+      <point x="1077.5833333333333" y="1049.0" />
+      <point x="76.25" y="92.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="524.5" y="374.0" />
+  <settings layout="Hierarchic Group" zoom="0.5975609756097561" x="577.0" y="728.0" />
   <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
