@@ -11,12 +11,12 @@ public class Chat extends Observable {
     private String peerName;
     private final InetSocketAddress peerAddress;
 
-    public Chat(String peerName, InetSocketAddress peerAddress) {
+    Chat(String peerName, InetSocketAddress peerAddress) {
         this.peerName = peerName;
         this.peerAddress = peerAddress;
     }
 
-    public void addMessage(ChatMessage message) {
+    void addMessage(ChatMessage message) {
         if (!"".equals(message.getName())) {
             peerName = message.getName();
         }

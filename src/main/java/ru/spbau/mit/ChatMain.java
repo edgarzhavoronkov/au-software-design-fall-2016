@@ -66,12 +66,12 @@ public class ChatMain extends Application implements Observer {
         chatTabs.getSelectionModel()
                 .selectedItemProperty()
                 .addListener((observable, oldValue, newValue) -> {
+                    if (newValue == null) {
+                        return;
+                    }
                     if (newValue.equals(addTab)) {
                         Tab newTab = makeNewChatTab();
-                        chatTabs.getTabs().add(newTab);
-                        chatTabs.getTabs().remove(addTab);
-                        chatTabs.getTabs().add(addTab);
-                        chatTabs.getSelectionModel().select(newTab);
+                        insertTabBeforeEnd(newTab);
                     }
                 });
 
@@ -103,11 +103,15 @@ public class ChatMain extends Application implements Observer {
         Chat chat = (Chat) arg;
         Platform.runLater(() -> {
             Tab newTab = makeExistingChatTab(chat);
-            chatTabs.getTabs().add(newTab);
-            chatTabs.getTabs().remove(addTab);
-            chatTabs.getTabs().add(addTab);
-            chatTabs.getSelectionModel().select(newTab);
+            insertTabBeforeEnd(newTab);
         });
+    }
+
+    private synchronized void insertTabBeforeEnd(Tab newTab) {
+        chatTabs.getTabs().add(newTab);
+        chatTabs.getTabs().remove(addTab);
+        chatTabs.getTabs().add(addTab);
+        chatTabs.getSelectionModel().select(newTab);
     }
 
     private synchronized Tab makeExistingChatTab(Chat chat)  {
