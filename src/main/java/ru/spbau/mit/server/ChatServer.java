@@ -17,6 +17,7 @@ import java.util.concurrent.Executors;
 /**
  * Author - Эдгар
  * Date - 04.01.2017, 21:36
+ * Server side of a chat
  */
 @Log4j2
 public class ChatServer {
@@ -29,6 +30,11 @@ public class ChatServer {
         this.manager = manager;
     }
 
+    /**
+     * Starts server on given port, accepts and dispatches connections
+     * @param portNumber port number
+     * @throws IOException if internal socket is failed to open
+     */
     public void start(int portNumber) throws IOException {
         log.info("Starting server at port " + portNumber);
         serverSocket = new ServerSocket(portNumber);
@@ -36,6 +42,7 @@ public class ChatServer {
             try {
                 while (!serverSocket.isClosed()) {
                     Socket connection = serverSocket.accept();
+                    log.info("Incoming connection, proceed to handle");
                     executor.execute(new ConnectionHandler(connection));
                 }
             } catch (SocketException ignored) {
@@ -46,6 +53,10 @@ public class ChatServer {
         });
     }
 
+    /**
+     * Suddenly, stops server
+     * @throws IOException if failed to close internal socket
+     */
     public void stop() throws IOException {
         serverSocket.close();
         executor.shutdown();

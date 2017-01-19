@@ -58,7 +58,7 @@ public class ChatMain extends Application implements Observer {
     public void start(Stage primaryStage) throws IOException {
         primaryStage.setTitle("TinyChat 9000");
         primaryStage.setResizable(false);
-        chatTabs.setTabClosingPolicy(TabPane.TabClosingPolicy.SELECTED_TAB);
+        chatTabs.setTabClosingPolicy(TabPane.TabClosingPolicy.UNAVAILABLE);
 
         chatTabs.getTabs().add(makeNewChatTab());
 
@@ -87,6 +87,7 @@ public class ChatMain extends Application implements Observer {
         VBox layout = new VBox(menu, chatTabs);
         primaryStage.setScene(new Scene(layout, 640, 480));
 
+        manager.addObserver(this);
         server.start(portNumber);
 
         primaryStage.show();
@@ -116,7 +117,6 @@ public class ChatMain extends Application implements Observer {
 
     private synchronized Tab makeExistingChatTab(Chat chat)  {
         Tab ret = new Tab();
-
         ChatClient client = new ChatClient(userName, portNumber, manager);
         client.connect(chat.getPeerHost(), chat.getPeerPortNumber());
 
@@ -175,7 +175,6 @@ public class ChatMain extends Application implements Observer {
                 client.connect(host, port);
                 synchronized (this) {
                     client.sendMessage(userName + " is knocking");
-                    client.disconnect();
                     chatTabs.getTabs().remove(ret);
                 }
             } catch (Exception e) {

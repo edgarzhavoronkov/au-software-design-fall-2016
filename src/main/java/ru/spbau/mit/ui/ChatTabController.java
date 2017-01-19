@@ -13,6 +13,7 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontPosture;
 import javafx.scene.text.Text;
 import lombok.extern.log4j.Log4j2;
+import org.jetbrains.annotations.NotNull;
 import ru.spbau.mit.chat.Chat;
 import ru.spbau.mit.chat.ChatMessage;
 import ru.spbau.mit.client.ChatClient;
@@ -26,6 +27,7 @@ import java.util.Observer;
 /**
  * Author - Эдгар
  * Date - 05.01.2017, 0:32
+ * Tab controller for single chat
  */
 @Log4j2
 public class ChatTabController implements Observer {
@@ -36,6 +38,12 @@ public class ChatTabController implements Observer {
     private final ListView history = new ListView();
     private final TextField inputField = new TextField();
 
+    /**
+     * C-tor, sets everything up
+     * @param tab tab to display
+     * @param client client to chat
+     * @param chat chat to observe
+     */
     public ChatTabController(Tab tab, ChatClient client, Chat chat) {
         this.tab = tab;
         this.client = client;
@@ -58,6 +66,7 @@ public class ChatTabController implements Observer {
         VBox vbox = new VBox(history);
 
         ScrollPane scrollPane = new ScrollPane(vbox);
+        scrollPane.vvalueProperty().bind(vbox.heightProperty());
         scrollPane.setFitToHeight(true);
         scrollPane.setFitToWidth(true);
 
@@ -68,6 +77,11 @@ public class ChatTabController implements Observer {
         tab.setContent(root);
     }
 
+    /**
+     * Updates chat with new message
+     * @param o object to update
+     * @param arg new message
+     */
     @Override
     public void update(Observable o, Object arg) {
         ChatMessage message = (ChatMessage) arg;
@@ -89,7 +103,8 @@ public class ChatTabController implements Observer {
         String msg = message.getText();
         String formatted = String.format("[%s] %s: \n %s \n", timestamp, name, msg);
         Text text = new Text(formatted);
-        text.setFill(Color.BLACK);
+        Color color = name.equals(client.getUserName()) ? Color.BLUE : Color.RED;
+        text.setFill(color);
         text.setFont(Font.font("Comic Sans MS", FontPosture.REGULAR, 14));
         history.getItems().add(text);
     }
@@ -102,8 +117,9 @@ public class ChatTabController implements Observer {
         history.getItems().add(text);
     }
 
+    @NotNull
     private String fromMillis(long time) {
         Date date = new Date(time);
-        return DateFormat.getDateInstance(DateFormat.DEFAULT).format(date);
+        return DateFormat.getDateInstance(DateFormat.FULL).format(date);
     }
 }

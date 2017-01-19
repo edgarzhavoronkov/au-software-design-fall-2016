@@ -2,6 +2,8 @@
 <Configuration status="INFO">
     <Properties>
         <Property name="server_log">logs/server.log</Property>
+        <Property name="manager_log">logs/manager.log</Property>
+        <Property name="proto_log">logs/proto.log</Property>
         <Property name="client_log">logs/client.log</Property>
         <Property name="tab_log">logs/tab.log</Property>
     </Properties>
@@ -37,6 +39,14 @@
         </logger>
 
         <logger name="ru.spbau.mit.ui.ChatTabController" level="INFO" additivity="false">
+            <AppenderRef ref="CONSOLE"/>
+        </logger>
+
+        <logger name="ru.spbau.mit.chat.ChatManager" level="INFO" additivity="false">
+            <AppenderRef ref="CONSOLE"/>
+        </logger>
+
+        <logger name="ru.spbau.mit.proto.ChatProtocol" level="INFO" additivity="false">
             <AppenderRef ref="CONSOLE"/>
         </logger>
     </Loggers>
